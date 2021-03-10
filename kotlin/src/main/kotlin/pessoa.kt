@@ -2,6 +2,10 @@ class pessoa {
     var nome:String = "Elias"
     var cpf:String = "009632444705"
     private set
+
+    constructor()
+
+    fun uniNomeCpf() = nome +" - "+ cpf
 }
 
 fun main(){
@@ -9,5 +13,5 @@ fun main(){
     println(elias)
     //elias.cpf = "0731402790"
     println(elias.nome)
-    println(elias.cpf)
+    println(elias.uniNomeCpf())
 }
